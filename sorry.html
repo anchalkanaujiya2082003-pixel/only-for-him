@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sorry ❤️</title>
+
+<style>
+body{
+    text-align:center;
+    font-family: Arial;
+    background: linear-gradient(to right,#ff758c,#ff7eb3);
+    color:white;
+}
+
+h1{
+    margin-top:70px;
+    animation: fadeIn 2s;
+}
+
+p{
+    font-size:18px;
+    line-height:28px;
+    margin:20px;
+    animation: fadeIn 3s;
+}
+
+.btn{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    margin:10px;
+}
+
+#yes{background:#ff2e63;color:white;}
+#no{
+    background:#333;
+    color:white;
+    position:absolute;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>I'm Really Sorry 🥺</h1>
+
+<p>
+My Love you ❤️(khushaal)<br><br>
+I know I hurt you...<br><br>
+But trust me, I didn’t mean to...<br><br>
+You mean everything to me 💖<br><br>
+Please forgive me?<br><br>
+ हो मारया मारया फिरे देख हाल तू बेचारे का<br><br>
+                तेरे बिन जीना भी के जीना बंजारे का<br><br>
+खोया रहूं याद तेरी करके नादानियां<br><br>
+बटुए में राखु तेरी सांभ के निशानियां<br><br>
+तेरे बिन काल होरे ठीक कोन्या हाल मेरा<br><br>
+हाथ जोड़ूं राम दे दे सांसां ते रिहाई मन्ने<br><br>
+गीता में गाई कदे छाती के लगाई मन्ने<br><br>
+please forgive me?         
+</p>
+
+<button id="yes" class="btn">Yes ❤️</button>
+<button id="no" class="btn">No 😒</button>
+
+<script>
+// No button bhagega
+const noBtn=document.getElementById("no");
+noBtn.addEventListener("mouseover",()=>{
+    noBtn.style.left=Math.random()*window.innerWidth+"px";
+    noBtn.style.top=Math.random()*window.innerHeight+"px";
+});
+
+// Yes click → next page
+document.getElementById("yes").onclick = function(){
+    window.location.href = "sorry2.html";
+};
+</script>
+
+</body>
+</html>
